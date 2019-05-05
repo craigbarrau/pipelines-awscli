@@ -7,6 +7,7 @@ RUN apk --update --no-cache add \
     gcc \
     musl-dev \
     python-dev  \
+    make \
     && pip install --no-cache-dir aws-sam-cli==$SAM_VERSION \
     && apk del py-pip \
     && apk del python-dev \
